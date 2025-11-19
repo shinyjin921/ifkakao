@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./script/script.js" defer></script>
+  <!-- <script src="./script/section03.js" defer></script> -->
+  <script src="./script/infinite.js" defer></script>
   <title>if(kakao) 클론</title>
 </head>
+
 <body>
   <header>
     <nav>
@@ -32,14 +36,13 @@
       </div>
     </nav>
     <div class="video_box">
-      <video
-      src="../assets/video/video_kv_250829.mp4"
-      poster="../assets/images/imgi_58_img_kv.png"
-      autoplay
-      muted
-      loop
-      >
-    </video>
+      <video src="../assets/video/video_kv_250829.mp4" poster="../assets/images/imgi_58_img_kv.png" autoplay muted loop>
+      </video>
+    </div>
+    <div class="scroll-popup">
+      <h1>lf(kakao)25가 <br>성황리에 마무리 되었습니다.</h1>
+      <p>관심 주신 모든 분들께 감사 인사드리며,<br>카카오는 가능성이 일상이 될 수 있도록 더 노력하겠습니다.</p>
+      <p class="yellow">세션 보러가기</p>
     </div>
   </header>
   <main>
@@ -51,11 +54,11 @@
           <ul class="slide-list">
             <li><img src="./assets/images/sec-01.png" alt="섹션1에 이미지에 슬라이드 01"></li>
             <li><img src="./assets/images/sec-02.png" alt="섹션1에 이미지에 슬라이드 02"></li>
-            <li><img src="./assets/images/sec-03.png"alt="섹션1에 이미지에 슬라이드 03"></li>
-            <li><img src="./assets/images/sec-04.png"alt="섹션1에 이미지에 슬라이드 04"></li>
-            <li><img src="./assets/images/sec-05.png"alt="섹션1에 이미지에 슬라이드 05"></li>
-            <li><img src="./assets/images/sec-06.png"alt="섹션1에 이미지에 슬라이드 06"></li>
-            <li><img src="./assets/images/sec-07.png"alt="섹션1에 이미지에 슬라이드 07"></li>
+            <li><img src="./assets/images/sec-03.png" alt="섹션1에 이미지에 슬라이드 03"></li>
+            <li><img src="./assets/images/sec-04.png" alt="섹션1에 이미지에 슬라이드 04"></li>
+            <li><img src="./assets/images/sec-05.png" alt="섹션1에 이미지에 슬라이드 05"></li>
+            <li><img src="./assets/images/sec-06.png" alt="섹션1에 이미지에 슬라이드 06"></li>
+            <li><img src="./assets/images/sec-07.png" alt="섹션1에 이미지에 슬라이드 07"></li>
           </ul>
           <ul class="indicator"></ul>
         </div>
@@ -100,6 +103,79 @@
     </section>
     <section id="section-3">
       <h2 class="sec-title">키노트 및 세션 하이라이트</h2>
+      <div class="card-wrap">
+        <div class="card-view">
+          <ul class="card-list">
+            <li>
+              <div class="top" style="background-color: #ffebc0;">
+                <ul class="caption">
+                  <li>section</li>
+                  <li>Tech</li>
+                  <li>Keynote</li>
+                </ul>
+                <h4>모두를 위한, 안전한 보이스톡 AI 통화 기능</h4>
+              </div>
+              <img src="./assets/images/keynote02.png" alt="키노트 캐러셀 01">
+            </li>
+            <li>
+              <div class="top" style="background-color:#e0ceff;">
+                <ul class="caption">
+                  <li>section</li>
+                  <li>Tech</li>
+                  <li>Product</li>
+                </ul>
+                <h4>커뮤니티로 진화한 오픈채팅,AI로 슬기롭게 연결하다</h4>
+              </div>
+              <img src="./assets/images/keynote03.png" alt="키노트 캐러셀 01">
+            </li>
+            <li>
+              <div class="top" style="background-color:#d2ebff;">
+                <ul class="caption">
+                  <li>Keynote</li>
+                </ul>
+                <h4>Kanana in KakaoTalk</h4>
+              </div>
+              <img src="./assets/images/kenote08.png" alt="키노트 캐러셀 01">
+            </li>
+            <li>
+              <div class="top" style="background-color:#c5fae6;">
+                <ul class="caption">
+                  <li>Keynote</li>
+                </ul>
+                <h4>Open AI 협업</h4>
+              </div>
+              <img src="./assets/images/keynote08.png" alt="키노트 캐러셀 01">
+            </li>
+            <li>
+              <div class="top" style="background-color:#ffd9d2;">
+                <ul class="caption">
+                  <li>section</li>
+                  <li>Tech</li>
+                  <li>Product</li>
+                </ul>
+                <h4>웹툰 크리에이터들과의 상생을 위한 숏츠 생성 AI Agent - 헬릭스 숏츠</h4>
+              </div>
+              <img src="./assets/images/keynote01.png" alt="키노트 캐러셀 01">
+            </li>
+            <li>
+              <div class="top">
+                <ul class="caption">
+                  <li>section</li>
+                  <li>Product</li>
+                </ul>
+                <h4>크리에이터 데뷔 무대가 전국문의 카톡 이라면?</h4>
+              </div>
+              <img src="./assets/images/keynote07.png" alt="키노트 캐러셀 01">
+            </li>
+            <li>
+          </ul>
+          <div class="overlap">
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <div class="prev">←</div>
+          <div class="next">→</div>
+        </div>
     </section>
     <section id="section-4">
       <h2 class="sec-title">행사 장소 및 교통 안내</h2>
@@ -108,9 +184,9 @@
           <ul class="slide-list">
             <li><img src="./assets/images/place01.jpg" alt="섹션1에 이미지에 슬라이드 02"></li>
             <li><img src="./assets/images/place02.jpg" alt="섹션1에 이미지에 슬라이드 02"></li>
-            <li><img src="./assets/images/place03.jpg"alt="섹션1에 이미지에 슬라이드 02"></li>
-            <li><img src="./assets/images/place04.jpg"alt="섹션1에 이미지에 슬라이드 02"></li>
-            <li><img src="./assets/images/place05.jpg"alt="섹션1에 이미지에 슬라이드 02"></li>
+            <li><img src="./assets/images/place03.jpg" alt="섹션1에 이미지에 슬라이드 02"></li>
+            <li><img src="./assets/images/place04.jpg" alt="섹션1에 이미지에 슬라이드 02"></li>
+            <li><img src="./assets/images/place05.jpg" alt="섹션1에 이미지에 슬라이드 02"></li>
           </ul>
           <ul class="indicator"></ul>
         </div>
@@ -121,7 +197,7 @@
               <h3>카카오 AI의 가능성을 열어가는 <br>새로운 공간, 카카오 AI 캠퍼스</h3>
               <p>카카오 AI 캠퍼스</p>
             </div>
-              <p class="btn">카카오맵에서 보기</p>
+            <p class="btn">카카오맵에서 보기</p>
           </div>
           <img src="./assets/images/map.png" alt="">
         </div>
@@ -224,7 +300,8 @@
               <p>＋</p>
             </div>
             <div class="a">
-              참가 신청 기간이 종료되고 참가가 확정되면 카카오톡 if kakao 채녈을 통해 참가 여부를 안내해 드립니다. 또한, 웹사이트 내 마이페이지를 통해서도 참가 확정 여부를 확인할 수도 있습니다.
+              참가 신청 기간이 종료되고 참가가 확정되면 카카오톡 if kakao 채녈을 통해 참가 여부를 안내해 드립니다. 또한, 웹사이트 내 마이페이지를 통해서도 참가 확정 여부를 확인할 수도
+              있습니다.
             </div>
           </li>
           <li>
@@ -271,7 +348,8 @@
               <p>＋</p>
             </div>
             <div class="a">
-              셔틀버스 탑승 장소에서 체크인을 하시면 if kakao 참가자를 위한 디지털 카드가 발급됩니다. 디지털 카드 확인을 통해 행사장에 입장하실 수 있습니다. 발급된 디지털 카드는 카카오톡>더보기>디지털카드에서 확인할 수 있습니다.
+              셔틀버스 탑승 장소에서 체크인을 하시면 if kakao 참가자를 위한 디지털 카드가 발급됩니다. 디지털 카드 확인을 통해 행사장에 입장하실 수 있습니다. 발급된 디지털 카드는
+              카카오톡>더보기>디지털카드에서 확인할 수 있습니다.
             </div>
           </li>
           <li>
@@ -286,7 +364,7 @@
           <li>
             <div class="q">
               <p>
-                  컨퍼런스 이후 학교/회사에 제출할 참석증 발급이 가능한가요?</p>
+                컨퍼런스 이후 학교/회사에 제출할 참석증 발급이 가능한가요?</p>
               <p>＋</p>
             </div>
             <div class="a">
@@ -304,19 +382,19 @@
       <img src="./assets/images/sharepc.png" alt="오른쪽 이미지">
     </section>
     <section id="section-7">
-        <img src="./assets/images/sonsor01.png" alt="스폰서 로고 01">
-        <img src="./assets/images/sonsor02.png" alt="스폰서 로고 02">
-        <img src="./assets/images/sonsor03.png" alt="스폰서 로고 03">
-        <img src="./assets/images/sonsor04.png" alt="스폰서 로고 04">
-        <img src="./assets/images/sonsor05.png" alt="스폰서 로고 05">
-        <img src="./assets/images/sonsor06.png" alt="스폰서 로고 06">
-        <img src="./assets/images/sonsor07.png" alt="스폰서 로고 07">
-        <img src="./assets/images/sonsor08.png" alt="스폰서 로고 08">
-        <img src="./assets/images/sonsor09.png" alt="스폰서 로고 09">
-        <img src="./assets/images/sonsor10.png" alt="스폰서 로고 10">
-        <img src="./assets/images/sonsor11.png" alt="스폰서 로고 11">
-        <img src="./assets/images/sonsor12.png" alt="스폰서 로고 12">
-        <img src="./assets/images/sonsor13.png" alt="스폰서 로고 13">
+      <img src="./assets/images/sonsor01.png" alt="스폰서 로고 01">
+      <img src="./assets/images/sonsor02.png" alt="스폰서 로고 02">
+      <img src="./assets/images/sonsor03.png" alt="스폰서 로고 03">
+      <img src="./assets/images/sonsor04.png" alt="스폰서 로고 04">
+      <img src="./assets/images/sonsor05.png" alt="스폰서 로고 05">
+      <img src="./assets/images/sonsor06.png" alt="스폰서 로고 06">
+      <img src="./assets/images/sonsor07.png" alt="스폰서 로고 07">
+      <img src="./assets/images/sonsor08.png" alt="스폰서 로고 08">
+      <img src="./assets/images/sonsor09.png" alt="스폰서 로고 09">
+      <img src="./assets/images/sonsor10.png" alt="스폰서 로고 10">
+      <img src="./assets/images/sonsor11.png" alt="스폰서 로고 11">
+      <img src="./assets/images/sonsor12.png" alt="스폰서 로고 12">
+      <img src="./assets/images/sonsor13.png" alt="스폰서 로고 13">
     </section>
   </main>
   <footer>
@@ -349,7 +427,6 @@
           <img src="./assets/images/marquee01.png" alt="marquee 이미지">
         </div>
       </div>
-    </div>
   </footer>
 </body>
 </html>

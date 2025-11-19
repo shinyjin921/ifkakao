@@ -57,7 +57,6 @@ const slideInit = (view) => {
     indicator.children[current-1].classList.add('active');
   }
 
-
   //해당 위치로 이동하는 공통 함수
   const currentGoto = (time)=>{
 slideList.style.trasition = time;
@@ -127,6 +126,7 @@ const enableButtons = ()=>{
 // slideInit();
 slideViews.forEach((view)=>{slideInit(view)});
 
+
 //자주 묻는 질문 탭 처리
 //ul.top에서 클릭되면 li-menu값을 읽어서 active
 //menu에 설정된 index번호에 맞는 ul에 맞는 active
@@ -156,4 +156,14 @@ tabItems.forEach((ulElem)=>{
       list.classList.toggle('show');
     });
   });
+});
+
+//header 영역에 scroll-popup에 show클래스가 추가/삭제
+const scrollElem = document.querySelector( '.scroll-popup' );
+window.addEventListener('scroll',()=>{
+  if(window.scrollY> 0){
+    scrollElem.classList.add('show');
+  }else{
+    scrollElem.classList.remove('show');
+  }
 });

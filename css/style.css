@@ -100,6 +100,61 @@ header {
   height: 100vh;
 }
 
+.scroll-popup {
+  opacity: 0;
+  transform: translateY(100vh);
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  text-align: center;
+}
+.scroll-popup h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.scroll-popup p:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #777777;
+}
+.scroll-popup .yellow {
+  display: inline-block;
+  color: #000;
+  background-color: #FEE500;
+  border: none;
+  border-radius: 16px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.scroll-popup .yellow:hover {
+  background-color: #FEB600;
+  color: #000;
+}
+@media all and (min-width: 768px) {
+  .scroll-popup .yellow {
+    border-radius: 32px;
+  }
+}
+
+.scroll-popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 nav {
   position: absolute;
   top: 0;
@@ -381,6 +436,9 @@ main .slide-wrap .slide-view .indicator li.active {
 
 #section-2 {
   overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
 #section-2 .card-list {
   margin: 3rem 0;
@@ -460,6 +518,60 @@ main .slide-wrap .slide-view .indicator li.active {
 #section-2 li:nth-child(3) .imgWrap {
   background-image: url(../assets/images/cardimg03.png);
   background-color: #ffebc0;
+}
+
+#section-3 .card-wrap .card-view {
+  position: relative;
+  overflow: hidden;
+}
+#section-3 .card-wrap .card-view ul.card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 1800px;
+}
+#section-3 .card-wrap .card-view ul.card-list > li {
+  width: 300px;
+  height: 400px;
+  flex: 0 0 300px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#section-3 .card-wrap .card-view ul.card-list > li .top {
+  height: 50%;
+  background-color: #ffebc0;
+  padding: 1rem;
+}
+#section-3 .card-wrap .card-view ul.card-list > li .top .caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+#section-3 .card-wrap .card-view ul.card-list > li .top .caption li {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+#section-3 .card-wrap .card-view ul.card-list > li .top h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+#section-3 .card-wrap .card-view ul.card-list > li img {
+  width: 100%;
+  height: 50%;
+}
+#section-3 .card-wrap .card-view .overlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80% rgb(255, 255, 255) 100%);
 }
 
 #section-4 .map {
@@ -545,7 +657,12 @@ main .slide-wrap .slide-view .indicator li.active {
 }
 #section-5 div.tabitem {
   position: relative;
-  min-height: 60vh;
+  min-height: 50vh;
+}
+@media all and (min-width: 768px) {
+  #section-5 div.tabitem {
+    min-height: 65vh;
+  }
 }
 #section-5 div.tabitem ul.item {
   position: absolute;
@@ -801,11 +918,11 @@ footer {
   align-items: stretch;
   gap: 1rem;
   white-space: nowrap;
-  width: 250%;
+  width: 3600px;
   animation: marquee 10s linear infinite;
 }
 #foot-ani .track div {
-  flex: 1;
+  flex: 0 0 800px;
 }
 
 @keyframes marquee {
